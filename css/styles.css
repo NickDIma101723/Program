@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Cuphead';
+    src: url('../cuphead_font_by_ripoof_dept3h3.ttf') format('truetype');
+}
+
+body{
+    font-family: Cuphead;
+    background-color: #CBAE95;
+    height: 100vh;
+    position: relative;
+}
+.navbar-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.navbar ul{
+   margin-top: 15px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   font-size: 1.4rem;
+   transition: 0.5s ease-in-out;
+}
+
+.navbar li a{
+    gap: 20px;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: black;
+}
+
+.navbar a:hover{
+    color: red;
+}
