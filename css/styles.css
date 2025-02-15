@@ -1,47 +1,132 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-@font-face {
-    font-family: 'Cuphead';
-    src: url('../cuphead_font_by_ripoof_dept3h3.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 
 body{
-    font-family: Cuphead;
-    background-color: #CBAE95;
+    background-color: #F9F4C1;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 100%), #F9F4C1;
     height: 100vh;
     position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    overflow: hidden;
 }
-.navbar-container{
+.navbar {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
 }
 
-.navbar ul{
-   margin-top: 15px;
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   font-size: 1.4rem;
-   transition: 0.5s ease-in-out;
+.logo img {
+    max-width: 55px;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease-in-out;
 }
 
-.navbar li a{
+.logo img:hover {
+    transform: rotate(360deg); 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
     gap: 20px;
-    text-decoration: none;
-    padding: 5px 5px;
-    color: black;
 }
 
-.navbar a:hover{
-    color: red;
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.3s ease-out;;
+}
+
+.nav-links a:hover {
+    color: tomato;
+}
+
+.home-content {
+    position: relative;
+    top: 180px;
+    left: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.home-content h2 {
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px; 
+}
+
+.home-content p {
+    display: block;
+    width: 50%; 
+    max-width: 600px;
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 40px;
+    font-family: 'Bangers', cursive;
+    line-height: 1.5; 
+}
+
+span {
+    color: tomato;
+}
+
+.btn {
+    position: relative;
+    top: 10px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+.btn:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.image-container {
+    position: relative;
+    bottom: 480px;
+    left: 1280px;
+}
+
+.image-container img {
+    width: 400px;
+    height: auto;
+    filter: blur(1px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.home-content img:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
 }
