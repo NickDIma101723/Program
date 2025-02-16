@@ -5,8 +5,7 @@
 
 
 body{
-    background-color: #F9F4C1;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.3) 100%), #F9F4C1;
+    background: #FFF8DC;
     height: 100vh;
     position: relative;
     margin: 0;
@@ -129,4 +128,76 @@ span {
 .home-content img:hover {
     transform: scale(1.1);
     filter: blur(0px);
+}
+
+.grass{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #8BA576;
+    border: solid 2px black;
+    z-index: -2;
+}
+
+.flower img {
+    position: absolute;
+    bottom: 50px;
+    max-width: 300px;
+    right: 750px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cloud1 img {
+    position: absolute;
+    top: 50px;
+    max-width: 200px;
+    left: 180px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cloud2 img {
+    position: absolute;
+    top: 150px;
+    max-width: 150px;
+    left: 550px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+.cloud3 img {
+    position: absolute;
+    top: 70px;
+    max-width: 180px;
+    right: 100px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cloud4 img {
+    position: absolute;
+    top: 20px;
+    max-width: 250px;
+    right: 800px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cloud5 img {
+    position: absolute;
+    top: 210px;
+    max-width: 160px;
+    right: 560px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }

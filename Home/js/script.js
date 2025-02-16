@@ -1,9 +1,5 @@
 const images = [
-    "images/Pink panter.jpg",
-    "images/Popeys.jpg",
-    "images/Road runner.jpg",
-    "images/Scooby doo.jpg",
-    "images/Flintstones.jpg",
+
 ];
 
 let currentImageIndex = 0;

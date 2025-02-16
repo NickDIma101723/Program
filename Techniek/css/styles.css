@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+body{
+    background: #FFF8DC;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    overflow: hidden;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.logo img {
+    max-width: 55px;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.logo img:hover {
+    transform: rotate(360deg); 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.3s ease-out;;
+}
+
+.nav-links a:hover {
+    color: tomato;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 50px;
+  margin-top: 5%;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F9F4C1;
+    border-radius: 10px;
+    border: #4F200D 4px solid;
+    max-width: 350px;
+    width: 90%;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 20px 10px 0px #E0C097; 
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #4F200D;
+    
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #F4E1C9;
+    border: 4px solid #aa461e; 
+    border-radius: 20px;
+    width: 85%;
+    max-width: 350px;
+    height: 180px;
+    gap: 15px;
+    position: absolute;
+    bottom: -100px;
+    padding: 15px;
+    box-shadow: 3px 3px 0px black;
+    opacity: 0;
+    transition: bottom 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    font-family: 'Bangers', cursive;
+    color: black;
+
+}
+
+.card:hover .card-text {
+   bottom: 40%;
+   opacity: 1;
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.card:hover{
+    animation: wobble 0.3s ease-in-out;
+}
+
+.card h1{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.card-text p{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Bangers', cursive;
+}
+
+.card-img{
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.grass{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #8BA576;
+    border: solid 2px black;
+    z-index: -1;
+}
+
+.flower1 img {
+    position: absolute;
+    bottom: 90px;
+    left: -1px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    animation: move 5s infinite;
+}
+
+.flower2 img {
+    position: absolute;
+    bottom: 90px;
+    right: 2px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
