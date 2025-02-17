@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+body{
+    background: #FFF8DC;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.logo img {
+    max-width: 55px;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.logo img:hover {
+    transform: rotate(360deg); 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.3s ease-out;;
+}
+
+.nav-links a:hover {
+    color: tomato;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 125px;
+  gap: 45px;
+}
+
+.card1{
+    background: #B57EDC;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    border: 4px solid #aa461e; 
+    box-shadow: 20px 10px 0px #E0C097; 
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition:  0.4s ease-in-out;
+}
+
+.card2{
+    background: #FFAB76;
+    width: 350px;
+    height: 500px;
+    border: 4px solid #aa461e; 
+    border-radius: 10px;
+    box-shadow: 20px 10px 0px #E0C097; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition:  0.4s ease-in-out;
+}
+
+.card3 {
+    background: #f8c006;
+    width: 350px;
+    height: 500px;
+    border: 4px solid #aa461e;
+    border-radius: 10px;
+    box-shadow: 20px 10px 0px #E0C097;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition:  0.4s ease-in-out;
+}
+
+.card3 ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.card3 ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.4;
+}
+
+
+.card4{
+    background: #64B5F6;
+    width: 350px;
+    height: 500px;
+    border: 4px solid #aa461e; 
+    border-radius: 10px;
+    box-shadow: 20px 10px 0px #E0C097; 
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition:  0.4s ease-in-out;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.grass{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #8BA576;
+    border: solid 2px black;
+    z-index: -1;
+}
+
+.cloud1 img {
+    position: absolute;
+    top: 50px;
+    max-width: 100px;
+    left: 180px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cloud2 img {
+    position: absolute;
+    top: 50px;
+    max-width: 150px;
+    left: 500px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+.cloud3 img {
+    position: absolute;
+    top: 60px;
+    max-width: 180px;
+    right: 100px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cloud4 img {
+    position: absolute;
+    top: 30px;
+    max-width: 250px;
+    right: 800px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.cloud5 img {
+    position: absolute;
+    top: 80px;
+    max-width: 160px;
+    right: 460px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.button{
+    padding: 14px 20px;
+    background-color: #ffcc00; 
+    color: #4F200D;
+    border: 4px solid #4F200D; 
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 4px 4px 0px #4F200D; 
+    transition: 0.5s ease-in-out;
+}
+
+.card1:hover{
+    transform: scale(1.05);
+}
+
+.card2:hover{
+    transform: scale(1.05);
+}
+
+.card3:hover{
+    transform: scale(1.05);
+}
+
+.card4:hover{
+    transform: scale(1.05);
+}
+
+.button:hover{
+    background-color: #4F200D;
+    color: #ffcc00;
+    border: 4px solid #ffcc00;
+    box-shadow: 4px 4px 0px #ffcc00; 
+}
