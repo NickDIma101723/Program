@@ -5,181 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Trailer Section</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script/script.js" defer></script>
+    <script src="script/script.js"defer></script>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body class="bg-[#3c3744] overflow-x-hidden">
     <div class="flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 lg:p-10">
         <!-- Movie Image (Background) -->
         <div class="relative w-full max-w-[1400px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[750px]">
+            <!-- Background Image -->
             <img src="images/Venom (1).jpg" class="w-full h-full object-cover rounded-lg" alt="Movie Background">
+            <!-- Overlay -->
             <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-lg"></div>
-            <div class="relative top-[-50%] sm:top-[20%] md:top-[-70%] left-[5%] sm:left-[6%] text-white z-10 w-full max-w-[750px] flex flex-col md:flex-row items-center gap-6">
-                <div class="flex-1">
+            <!-- Content Container -->
+            <div class="absolute inset-0 max-w-[800px] flex md:flex-row items-center justify-center gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 lg:p-10 text-white z-10">
+                <!-- Text Content -->
+                <div class="flex-1 ">
                     <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold">Venom</h1>
                     <p class="text-sm sm:text-base md:text-lg mt-2">
                         In Venom: The Last Dance, Tom Hardy returns as Venom, one of Marvel's greatest and most complex characters, for the final film in the trilogy. Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.
                     </p>
-                    <button class="mt-4 flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
+                    <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/__2bjWbetsA?si=fIIrojB579qmUtzw">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
                         </svg>
                         Watch Trailer
                     </button>
                 </div>
-                <img src="images/Venom.jpg" class="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] z-100 object-contain shadow-lg rounded-full transition-transform duration-300 hover:scale-105" alt="Movie Thumbnail">
+                <img src="images/Venom.jpg" class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] object-contain shadow-lg rounded-full transition-transform duration-300 hover:scale-105" alt="Movie Thumbnail">
             </div>
         </div>
+    </div>
 
-        <!-- Image Gallery (Responsive Grid with All 10 Cards) -->
-        <div class="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
-            <!-- Card 1 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 1</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
+    <div class="mt-8 p-10 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Deadpool.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 1</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/73_1biulkYk?si=UZ_qZ0lr4oZ2UbZ7">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Moana.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 2</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/LKFuXETZUsI">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/sonic.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 3</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/G5kzUpWAusI">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Inside out.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 4</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/LEjhY15eCx0?si=iPfDOD4aryJbPWck">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Brutalist.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 5</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/GdRXPAHIEW4?si=Sw8PZhOIinYMOXeA">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Dune.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 6</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/n9xhJrPXop4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Mad max.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 7</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/hEJnMQG9ev8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Nosferatu.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 8</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/nulvWqYUM8k?si=zKLxbaSqPjL7xgTx">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Pain.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 9</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/b2et8Vpu7Ls?si=sOststPldO-LyNkl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+        <div class="w-full h-100 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
+            <img src="images/Wild.jpg" class="w-full h-40 object-cover rounded-2xl" alt="Image 4">
+            <div>
+                <p class="font-extrabold text-white">Card Title 10</p>
+                <p class="text-white">4 popular types of cards in UI design.</p>
+            </div>
+            <button class="watch-trailer-btn mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95" data-trailer="https://www.youtube.com/embed/67vbA5ZJdKQ?si=586HM2W19UVwskYz">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
+                </svg>
+                Watch Trailer
+            </button>
+        </div>
+    </div>
+    <div id="trailerModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-[#2c2734] border border-gray-800 rounded-lg max-w-3xl w-full animate-fadeIn">
+            <div class="p-4 border-b border-gray-800 flex justify-between items-center">
+                <h3 id="modalTitle" class="text-xl font-semibold text-white">Movie Trailer</h3>
+                <button id="closeModal" class="text-gray-400 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                 </button>
             </div>
-
-            <!-- Card 2 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 2</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
+            <div class="p-4">
+                <div class="aspect-video w-full overflow-hidden rounded-md bg-black">
+                    <iframe
+                        id="trailerFrame"
+                        title="Movie Trailer"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        class="w-full h-full"
+                    ></iframe>
                 </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 3</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 4</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 5</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 6</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 7 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 7</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 8</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 9 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 9</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
-            </div>
-
-            <!-- Card 10 -->
-            <div class="w-full h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-purple-200 transition-shadow">
-                <img src="images/Venom (4).jpg" class="w-full h-40 object-cover rounded-2xl mb-4" alt="Image 4">
-                <div>
-                    <p class="font-extrabold text-white">Card Title 10</p>
-                    <p class="text-white">4 popular types of cards in UI design.</p>
-                </div>
-                <button class="mt-4 flex items-center gap-2 px-4 py-2 border-4 border-[#1A1A2E] bg-transparent hover:text-black text-white font-semibold text-sm rounded-md shadow-lg hover:bg-[#F8F8F8] transition duration-300 active:scale-95">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v18l15-9L5 3z" />
-                    </svg>
-                    Watch Trailer
-                </button>
             </div>
         </div>
     </div>
